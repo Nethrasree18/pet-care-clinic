@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetCare - Pet Care & Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🐾 PetCare
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#offers">🎁 Offers</a>
+                </li>
+
+                <li>
+                    <a href="#register">Pet Registration</a>
+                </li>
+
+                <li>
+                    <a href="#appointment">Appointment</a>
+                </li>
+
+                <li>
+                    <a href="#records">Records</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <span class="welcome">
+                🐾 Welcome to PetCare
+            </span>
+
+            <h1>
+                Love. Care. Protect.
+            </h1>
+
+            <h2>
+                Complete Pet Care & Management System
+            </h2>
+
+            <p>
+                Give your furry friends the best care with
+                easy pet registration, veterinary services,
+                appointment booking and health management.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#appointment" class="btn">
+                    📅 Book Appointment
+                </a>
+
+                <a href="#offers" class="btn secondary-btn">
+                    🎁 View Offers
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="section">
+
+        <h2 class="section-title">
+            Our Pet Care Services
+        </h2>
+
+        <p class="section-subtitle">
+            Everything your pet needs in one place
+        </p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <div class="icon">
+                    🩺
+                </div>
+
+                <h3>
+                    Veterinary Care
+                </h3>
+
+                <p>
+                    Professional veterinary consultation
+                    and health check-ups for your pets.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">
+                    💉
+                </div>
+
+                <h3>
+                    Vaccination
+                </h3>
+
+                <p>
+                    Keep your pets protected with
+                    regular vaccination services.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">
+                    🦴
+                </div>
+
+                <h3>
+                    Pet Nutrition
+                </h3>
+
+                <p>
+                    Healthy food and nutrition guidance
+                    for your beloved pets.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">
+                    🛁
+                </div>
+
+                <h3>
+                    Grooming
+                </h3>
+
+                <p>
+                    Professional grooming and hygiene
+                    services for your pets.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PET OFFERS ================= -->
+
+    <section id="offers" class="section offers-section">
+
+        <h2 class="section-title">
+            🎁 Special Pet Offers
+        </h2>
+
+        <p class="section-subtitle">
+            Special discounts for your lovely pets
+        </p>
+
+
+        <div class="offers-container">
+
+
+            <!-- DOG OFFER -->
+
+            <div class="offer-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=80"
+                    alt="Dog"
+                >
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        20% OFF
+                    </span>
+
+                    <h3>
+                        🐶 Dog Grooming
+                    </h3>
+
+                    <p>
+                        Complete grooming package
+                        for your lovely dog.
+                    </p>
+
+                    <div class="price">
+                        ₹799
+                        <del>₹999</del>
+                    </div>
+
+                    <button
+                        class="offer-btn"
+                        onclick="claimOffer('Dog Grooming')"
+                    >
+                        Claim Offer
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAT OFFER -->
+
+            <div class="offer-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80"
+                    alt="Cat"
+                >
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        15% OFF
+                    </span>
+
+                    <h3>
+                        🐱 Cat Health Check
+                    </h3>
+
+                    <p>
+                        Complete health check-up
+                        for your adorable cat.
+                    </p>
+
+                    <div class="price">
+                        ₹599
+                        <del>₹699</del>
+                    </div>
+
+                    <button
+                        class="offer-btn"
+                        onclick="claimOffer('Cat Health Check')"
+                    >
+                        Claim Offer
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RABBIT OFFER -->
+
+            <div class="offer-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=700&q=80"
+                    alt="Rabbit"
+                >
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        25% OFF
+                    </span>
+
+                    <h3>
+                        🐰 Rabbit Care
+                    </h3>
+
+                    <p>
+                        Special health and nutrition
+                        package for rabbits.
+                    </p>
+
+                    <div class="price">
+                        ₹449
+                        <del>₹599</del>
+                    </div>
+
+                    <button
+                        class="offer-btn"
+                        onclick="claimOffer('Rabbit Care')"
+                    >
+                        Claim Offer
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- BIRD OFFER -->
+
+            <div class="offer-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=700&q=80"
+                    alt="Bird"
+                >
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        10% OFF
+                    </span>
+
+                    <h3>
+                        🐦 Bird Care
+                    </h3>
+
+                    <p>
+                        Nutrition and health consultation
+                        for your pet birds.
+                    </p>
+
+                    <div class="price">
+                        ₹399
+                        <del>₹449</del>
+                    </div>
+
+                    <button
+                        class="offer-btn"
+                        onclick="claimOffer('Bird Care')"
+                    >
+                        Claim Offer
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PET REGISTRATION ================= -->
+
+    <section id="register" class="section light">
+
+        <h2 class="section-title">
+            🐾 Pet Registration
+        </h2>
+
+        <p class="section-subtitle">
+            Register your pet with us
+        </p>
+
+
+        <div class="form-container">
+
+            <form id="petForm">
+
+                <label>
+                    Pet Name
+                </label>
+
+                <input
+                    type="text"
+                    id="petName"
+                    placeholder="Enter pet name"
+                    required
+                >
+
+
+                <label>
+                    Pet Type
+                </label>
+
+                <select id="petType" required>
+
+                    <option value="">
+                        Select Pet Type
+                    </option>
+
+                    <option>
+                        Dog
+                    </option>
+
+                    <option>
+                        Cat
+                    </option>
+
+                    <option>
+                        Rabbit
+                    </option>
+
+                    <option>
+                        Bird
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Breed
+                </label>
+
+                <input
+                    type="text"
+                    id="breed"
+                    placeholder="Enter breed"
+                    required
+                >
+
+
+                <label>
+                    Age
+                </label>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter age"
+                    min="0"
+                    required
+                >
+
+
+                <label>
+                    Owner Name
+                </label>
+
+                <input
+                    type="text"
+                    id="ownerName"
+                    placeholder="Enter owner name"
+                    required
+                >
+
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    🐾 Register Pet
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= APPOINTMENT ================= -->
+
+    <section id="appointment" class="section">
+
+        <h2 class="section-title">
+            📅 Book an Appointment
+        </h2>
+
+        <p class="section-subtitle">
+            Schedule a visit with our veterinarian
+        </p>
+
+
+        <div class="form-container">
+
+            <form id="appointmentForm">
+
+
+                <label>
+                    Pet Name
+                </label>
+
+                <input
+                    type="text"
+                    id="appointmentPet"
+                    placeholder="Enter pet name"
+                    required
+                >
+
+
+                <label>
+                    Owner Name
+                </label>
+
+                <input
+                    type="text"
+                    id="appointmentOwner"
+                    placeholder="Enter owner name"
+                    required
+                >
+
+
+                <label>
+                    Select Veterinarian
+                </label>
+
+                <select id="doctor" required>
+
+                    <option value="">
+                        Select Veterinarian
+                    </option>
+
+                    <option>
+                        Dr. Arun
+                    </option>
+
+                    <option>
+                        Dr. Priya
+                    </option>
+
+                    <option>
+                        Dr. Karthik
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Appointment Date
+                </label>
+
+                <input
+                    type="date"
+                    id="appointmentDate"
+                    required
+                >
+
+
+                <label>
+                    Appointment Time
+                </label>
+
+                <input
+                    type="time"
+                    id="appointmentTime"
+                    required
+                >
+
+
+                <label>
+                    Reason for Visit
+                </label>
+
+                <textarea
+                    id="reason"
+                    placeholder="Enter reason for appointment"
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    📅 Book Appointment
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RECORDS ================= -->
+
+    <section id="records" class="section light">
+
+        <h2 class="section-title">
+            📋 Pet Management Records
+        </h2>
+
+        <p class="section-subtitle">
+            View your registered pets and appointments
+        </p>
+
+
+        <div class="record-container">
+
+
+            <!-- PET RECORDS -->
+
+            <div class="record-box">
+
+                <div class="record-heading">
+
+                    <h3>
+                        🐾 Registered Pets
+                    </h3>
+
+                    <span id="petCount">
+                        0
+                    </span>
+
+                </div>
+
+                <div id="petList">
+
+                    <p class="empty">
+                        No pets registered yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPOINTMENT RECORDS -->
+
+            <div class="record-box">
+
+                <div class="record-heading">
+
+                    <h3>
+                        📅 Appointments
+                    </h3>
+
+                    <span id="appointmentCount">
+                        0
+                    </span>
+
+                </div>
+
+                <div id="appointmentList">
+
+                    <p class="empty">
+                        No appointments booked yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>
+            🐾 Contact PetCare
+        </h2>
+
+        <p>
+            We are always here to care for your pets.
+        </p>
+
+
+        <div class="contact-container">
+
+            <div>
+                📍
+                <strong>Location</strong>
+                <br>
+                Coimbatore, Tamil Nadu
+            </div>
+
+
+            <div>
+                📞
+                <strong>Phone</strong>
+                <br>
+                +91 98765 43210
+            </div>
+
+
+            <div>
+                📧
+                <strong>Email</strong>
+                <br>
+                petcare@example.com
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 PetCare.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Made with ❤️ for pets
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
